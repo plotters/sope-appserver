@@ -1,0 +1,122 @@
+{
+  NGObjWeb_doc_   = "default WebDAV property mappings for NGObjWeb";
+
+  /* DAV */
+  "{DAV:}iscollection"         = "davIsCollection";
+  "{DAV:}ishidden"             = "davIsHidden";
+  "{DAV:}uid"                  = "davUid";
+  "{DAV:}href"                 = "davURL";
+  "{DAV:}getlastmodified"      = "davLastModified";
+  "{DAV:}creationdate"         = "davCreationDate";
+  "{DAV:}getcontentlength"     = "davContentLength";
+  "{DAV:}getcontenttype"       = "davContentType";
+  "{DAV:}getetag"              = "davEntityTag";
+  "{DAV:}displayname"          = "davDisplayName";
+  "{DAV:}hassubs"              = "davHasSubFolders";
+  "{DAV:}nosubs "              = "davDenySubFolders";
+  "{DAV:}childcount"           = "davChildCount";
+  "{DAV:}objectcount"          = "davObjectCount";
+  "{DAV:}visiblecount"         = "davVisibleCount";
+  "{DAV:}isfolder"             = "davIsFolder";
+  "{DAV:}resourcetype"         = "davResourceType";
+  "{DAV:}contentclass"         = "davContentClass";
+  "{DAV:}isstructureddocument" = "davIsStructuredDocument";
+  "{DAV:}status"               = "davStatus";
+  "{http://apache.org/dav/props/}executable" = "davIsExecutable";
+
+  /* used with Apple WebDAV */
+  "{DAV:}quota"                = davQuota;
+  "{DAV:}quotaused"            = davQuotaUsed;
+  "{http://www.apple.com/webdav_fs/props/}appledoubleheader"=appleDoubleHeader;
+
+  /* Novell NetDrive */
+  "{DAV:}owner"                = davOwner;
+  "{DAV:}locktoken"            = davLockToken;
+  "{DAV:}activelock"           = davActiveLock;
+  // TODO: non-standard?, also used by WebDrive
+  "{DAV:}collection"           = davNetDriveCollection;
+
+  /* new in current WebFolders */
+  "{DAV:}defaultdocument"    = davDefaultDocument;
+  "{DAV:}getcontentlanguage" = davContentLanguage;
+  "{DAV:}isreadonly"         = davIsReadOnly;
+  "{DAV:}isroot"             = davIsRoot;
+  "{DAV:}lastaccessed"       = davLastAccessed;
+  "{DAV:}name"               = davName;
+  "{DAV:}parentname"         = davParentName;
+  
+  /* new in Cadaver 0.21.0 */
+  "{DAV:}checked-in"  = davCheckedIn;
+  "{DAV:}checked-out" = davCheckedOut;
+
+  /* WebDrive 7.10.1475 */
+
+  "{DAV:}srt_creationtime"   = davWebDriveCreationTime;
+  "{DAV:}srt_modifiedtime"   = davWebDriveModificationTime;
+  "{DAV:}srt_proptimestamp"  = davWebDrivePropTimestamp;
+  "{DAV:}srt_lastaccesstime" = davWebDriveLastAccessTime;
+  "{DAV:}SRT_fileattributes" = davWebDriveFileAttributes;
+  "{DAV:}BSI_isreadonly"     = davIsReadOnly;
+  
+  /* Nautilus DAV support */
+  "{http://services.eazel.com/namespaces}nautilus-treat-as-directory" = 
+    "davIsFolder";
+
+  /* Konqueror */
+  "{DAV:}source"        = davSourceURL;
+  "{DAV:}executable"    = davIsExecutable;
+  "{DAV:}supportedlock" = davSupportedLock;
+  "{DAV:}lockdiscovery" = davLockDiscovery;
+  
+  /* HotMail (TM) */
+  "{http://schemas.microsoft.com/hotmail/}adbar"   = "hotmailAdbarInfo";
+  "{http://schemas.microsoft.com/hotmail/}maxpoll" = "hotmailMaxPollInterval";
+  "{http://schemas.microsoft.com/hotmail/}sig"     = "hotmailSignature";
+  
+  /* HTTP-Mail folders */
+  "{urn:schemas:httpmail:}calendar"        = "calendarFolderURL";
+  "{urn:schemas:httpmail:}contacts"        = "contactsFolderURL";
+  "{urn:schemas:httpmail:}deleteditems"    = "trashFolderURL";
+  "{urn:schemas:httpmail:}msgfolderroot"   = "accountRootURL";
+  "{urn:schemas:httpmail:}drafts"          = "draftsFolderURL";
+  "{urn:schemas:httpmail:}inbox"           = "inboxFolderURL";
+  "{urn:schemas:httpmail:}journal"         = "journalFolderURL";
+  "{urn:schemas:httpmail:}notes"           = "notesFolderURL";
+  "{urn:schemas:httpmail:}outbox"          = "outboxFolderURL";
+  "{urn:schemas:httpmail:}sendmsg"         = "mtaURL";
+  "{urn:schemas:httpmail:}sentitems"       = "sentFolderURL";
+  "{urn:schemas:httpmail:}tasks"           = "tasksFolderURL";
+  
+  /* HTTP-Mail fields */
+  "{urn:schemas:httpmail:}date"            = "date";
+  "{urn:schemas:httpmail:}hasattachment"   = "hasAttachment";
+  "{urn:schemas:httpmail:}read"            = "read";
+  "{urn:schemas:httpmail:}textdescription" = "textDescription";
+  "{urn:schemas:httpmail:}unreadcount"     = "unreadCount";
+  "{urn:schemas:mailheader:}cc"            = "cc";
+  "{urn:schemas:mailheader:}date"          = "date";
+  "{urn:schemas:mailheader:}from"          = "from";
+  "{urn:schemas:mailheader:}in-reply-to"   = "inReplyTo";
+  "{urn:schemas:mailheader:}message-id"    = "messageId";
+  "{urn:schemas:mailheader:}received"      = "received";
+  "{urn:schemas:mailheader:}references"    = "references";
+  "{urn:schemas:mailheader:}subject"       = "davDisplayName";
+  "{urn:schemas:mailheader:}to"            = "to";
+  
+  /* Exchange 2000 (TM) */
+  "{http://schemas.microsoft.com/exchange/}outlookfolderclass" = 
+    "outlookFolderClass";
+  "{http://schemas.microsoft.com/exchange/}outlookmessageclass" =
+    "outlookMessageClass";
+
+  /* OpenOffice.org */
+  "{http://ucb.openoffice.org/dav/props/}IsReadOnly"    = davIsReadOnly;
+  "{http://ucb.openoffice.org/dav/props/}BaseURI"       = davBaseURI; // TODO
+  "{http://ucb.openoffice.org/dav/props/}IsCompactDisc" = isOOoCompactDisc;
+  "{http://ucb.openoffice.org/dav/props/}IsFloppy"      = isOOoFloppy;
+  "{http://ucb.openoffice.org/dav/props/}IsHidden"      = davIsHidden;
+  "{http://ucb.openoffice.org/dav/props/}IsRemote"      = isOOoRemote;
+  "{http://ucb.openoffice.org/dav/props/}IsRemoveable"  = isOOoRemoveable;
+  "{http://ucb.openoffice.org/dav/props/}IsVolume"      = isOOoVolume;
+  "{http://ucb.openoffice.org/dav/props/}TargetURL"     = davOOoTargetURL;
+}
